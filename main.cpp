@@ -77,6 +77,12 @@ int main()
 	ImGui::CreateContext();
 	ImGuiIO& io = ImGui::GetIO(); (void)io;
 	io.ConfigFlags &= ~ImGuiConfigFlags_NavEnableKeyboard; 
+	
+	// Increase font size
+	io.Fonts->Clear();
+	ImFontConfig fontConfig;
+	fontConfig.SizePixels = 24.0f; // 设置更大的字体大小
+	io.Fonts->AddFontDefault(&fontConfig);
 
 	ImGui_ImplGlfw_InitForOpenGL(window, true);
 	ImGui_ImplOpenGL3_Init("#version 130");
