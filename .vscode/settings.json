@@ -1,0 +1,9 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/mr/git/github/everything-linux/builds",
+            "binaryPath": "/home/mr/git/github/everything-linux/builds/everything",
+            "binaryArgs": []
+        }
+    ]
+}
